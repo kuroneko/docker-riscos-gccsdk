@@ -10,6 +10,8 @@ RUN svn co svn://svn.riscos.info/gccsdk/trunk/gcc4 gcc4
 
 COPY gccsdk-params gcc4
 
-RUN DEBIAN_FRONTEND=noninteractive cd gcc4 && ./build-world
+RUN cd gcc4 && ./build-world
+
+ENV PATH=/opt/gccsdk/bin:${PATH}
 
 CMD /bin/bash 
