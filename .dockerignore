@@ -2,3 +2,5 @@
 Makefile
 README.md
 Dockerfile
+autobuilder/.svn
+gcc4/.svn

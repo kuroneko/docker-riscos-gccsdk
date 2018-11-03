@@ -5,9 +5,8 @@ GCC for RISC OS Crosscompiler
 ## Container Layout
 
  * `/opt/gccsdk/bin` contains the compiler binaries.
- * `/usr/src/gcc4` contains the sources for GCCSDK itself.
- * `/usr/src/autobuilder` contains the GCCSDK Autobuilder.  There is a build
-   directory also available at `/usr/src/build`.
+ * `/usr/src/gccsdk/autobuilder` contains the GCCSDK Autobuilder.  There is a build
+   directory also available at `/usr/src/gccsdk/build`.
 
 ## Building the Container
 
