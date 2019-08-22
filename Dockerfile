@@ -10,14 +10,18 @@ COPY ./gcc4 gcc4
 
 COPY ./gccsdk-params gcc4
 
+ARG NUMPROC=1
+ARG MAKEFLAGS
+
 RUN cd gcc4 && ./build-world
 
 FROM ubuntu-base
 
-ENV PATH=/opt/gccsdk/bin:${PATH}
+ENV PATH=/opt/gccsdk/cross/bin:${PATH}
 
 WORKDIR /usr/src
 
 COPY --from=builder /opt/gccsdk /opt/gccsdk
+COPY ./gccsdk-params /opt/gccsdk
 
 CMD /bin/bash 

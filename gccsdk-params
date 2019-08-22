@@ -1,5 +1,5 @@
 # -- Following section is user configurable:
 # This is where the cross compiler will be installed.  It needs to end in 'bin'.
-export GCCSDK_INSTALL_CROSSBIN=/opt/gccsdk/bin
+export GCCSDK_INSTALL_CROSSBIN=/opt/gccsdk/cross/bin
 # This is where the porting tools and any libraries you build will be installed.
 export GCCSDK_INSTALL_ENV=/opt/gccsdk/env
